@@ -1,1 +1,1 @@
-# Python-project-Scrapper
+# Python-Image-Scrapper
