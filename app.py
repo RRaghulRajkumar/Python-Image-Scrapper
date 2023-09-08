@@ -61,7 +61,7 @@ def index():
                                 file_path=os.path.join(save_directory_locally, f"{query}_{image_tags.index(image_tag)}.jpg")
                                 with open(file_path, "wb") as f:
                                     f.write(image_data)
-                    client = pymongo.MongoClient("mongodb+srv://rraghulrajkumar:Raghulbornonjuly18@cluster0.aqsg81p.mongodb.net/?retryWrites=true&w=majority")
+                    client = pymongo.MongoClient("mongodb+srv://rraghulrajkumar:<password>@cluster0.aqsg81p.mongodb.net/?retryWrites=true&w=majority")
                     db = client['image_scrappers']
                     review_col = db['image_scrapper_data']
                     review_col.insert_many(img_data)          
